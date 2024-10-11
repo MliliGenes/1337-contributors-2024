@@ -1,27 +1,48 @@
-# React + TypeScript + Vite
+# 1337 Git workshop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ⚡ How to contribute ⚡
 
-Currently, two official plugins are available:
+1. Fork this repo, read [how to fork repo](https://help.github.com/articles/fork-a-repo/)
+2. Clone the project to your local machine
+3. Install all dependencies :
+   - `npm install` or `yarn`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4. Create branch with your intra name, ex: `eaouassa`.
+   > ❗ **Never use the `master` branch to create PR** ❗
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```sh
+git checkout -b <branch-name>
+# <branch-name> : ex eaouassa
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+5. Add a file with your name `intraName.yml` (ex: `eaouassa.yml`) to the `./contributors/` directory in your branch.
+6. Add code with your infos like this:
+```yml
+firstName: EL HOUCINE
+lastName: AOUASSAR
+bio: Front end Web Developer
+github: awixor
+```
+
+7. Check you change in your local machine
+
+- `yarn start` or `npm run start`
+- Your site is now running at `http://localhost:8000`!
+- Check the site and Make sure your name and profile avatar is on the list.
+
+8. Commit changes and push
+
+```sh
+git add <path-to-the-yaml-file>
+
+#Now commit those changes using the git commit command:
+git commit -m "Add <your-name> to Contributors list"
+#replacing <your-name> with your name.
+
+#push
+
+git push origin <branch-name>
+
+```
+
+9. Create Pull-Request to `master` branch in this repository, read [how creating PR](https://help.github.com/articles/creating-a-pull-request/)

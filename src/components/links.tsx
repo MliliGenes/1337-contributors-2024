@@ -11,19 +11,19 @@ export default function Links() {
       <div className="flex items-center justify-center">
         <a
           href=""
-          className="hover:bg-white hover:bg-opacity-10 size-8 flex justify-center items-center rounded-md transition-all duration-150 ease-in"
+          className="hover:bg-white hover:bg-opacity-10 hover:text-orange-500 size-8 flex justify-center items-center rounded-md transition-all duration-150 ease-in"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
           href=""
-          className="hover:bg-white hover:bg-opacity-10 size-8 flex justify-center items-center rounded-md transition-all duration-150 ease-in"
+          className="hover:bg-white hover:bg-opacity-10 hover:text-orange-500 size-8 flex justify-center items-center rounded-md transition-all duration-150 ease-in"
         >
           <FontAwesomeIcon icon={faXTwitter} />
         </a>
         <a
           href=""
-          className="hover:bg-white hover:bg-opacity-10 size-8 flex justify-center items-center rounded-md transition-all duration-150 ease-in"
+          className="hover:bg-white hover:bg-opacity-10 hover:text-orange-500 size-8 flex justify-center items-center rounded-md transition-all duration-150 ease-in"
         >
           <FontAwesomeIcon icon={faDiscord} />
         </a>

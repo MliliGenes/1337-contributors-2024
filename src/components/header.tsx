@@ -4,8 +4,11 @@ import ScreenLayout from "./screenlayout";
 
 export default function Header() {
   return (
-    <header className="bg-gray-900">
-      <ScreenLayout className="flex justify-between items-center h-14 gap-5">
+    <header>
+      <ScreenLayout
+        style="bg-style-1"
+        className="flex justify-between items-center h-16 gap-5"
+      >
         <Logo />
         <Links />
       </ScreenLayout>

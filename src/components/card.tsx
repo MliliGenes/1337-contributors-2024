@@ -19,9 +19,9 @@ const Card: React.FC<Card> = ({ props }) => {
   );
 
   const skillsCmp = skills && (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-2 px-12 justify-center">
       {skills?.map((s: string) => (
-        <span className="text-sm bg-orange-500 text-white px-2 py-1 rounded-3xl uppercase">
+        <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded-3xl uppercase">
           {s}
         </span>
       ))}
@@ -33,7 +33,7 @@ const Card: React.FC<Card> = ({ props }) => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-style-1 h-96 justify-center gap-2 rounded border border-orange-500">
+    <div className="flex flex-col  bg-style-1 min-h-96 py-12 items-center gap-3 rounded-md border-[0.5px] border-white border-opacity-5 hover:border-orange-500 transition-all duration-150">
       <div className="size-32 rounded-full overflow-hidden">
         {userName && !imgError ? (
           <img
@@ -46,9 +46,12 @@ const Card: React.FC<Card> = ({ props }) => {
           avatar
         )}
       </div>
-      <h2 className="text-4xl font-sora">{firstName + " " + lastName}</h2>
-      <span>@{userName}</span>
-      <p className="mb-5">{bio}</p>
+      <h2 className="text-4xl font-sora">
+        <span className="text-orange-500">{firstName}</span>{" "}
+        <span>{lastName}</span>
+      </h2>
+      <span className="text-orange-400 text-sm">@{userName}</span>
+      <p className="mb-5 text-md capitalize px-6">{bio}</p>
       {skillsCmp}
     </div>
   );

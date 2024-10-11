@@ -8,10 +8,28 @@ export default function Gird() {
           firstName: "Saad",
           lastName: "El Mlili",
           userName: "MliliGenes",
-          bio: "i code!",
-          skills: ["react", "express", "deno"],
+          bio: "Full-stack developer with a passion for AI",
+          skills: ["JavaScript", "Python", "React", "TensorFlow"],
         }}
       />
+      {/* <Card
+        props={{
+          firstName: "Saad",
+          lastName: "El Mlili",
+          userName: "MliliGenes",
+          bio: "Full-stack developer with a passion for AI",
+          skills: ["JavaScript", "Python", "React", "TensorFlow"],
+        }}
+      />
+      <Card
+        props={{
+          firstName: "Saad",
+          lastName: "El Mlili",
+          userName: "MliliGenes",
+          bio: "Full-stack developer with a passion for AI",
+          skills: ["JavaScript", "Python", "React", "TensorFlow"],
+        }}
+      />*/}
     </div>
   );
 }

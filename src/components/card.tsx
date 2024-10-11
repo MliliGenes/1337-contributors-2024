@@ -18,10 +18,10 @@ const Card: React.FC<Card> = ({ props }) => {
     </div>
   );
 
-  const skillsCmp = skills && (
+  const skillsCmp = (
     <div className="flex flex-wrap gap-2 px-12 justify-center">
       {skills?.map((s: string) => (
-        <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded-3xl uppercase">
+        <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded-3xl capitalize cursor-pointer">
           {s}
         </span>
       ))}
@@ -33,7 +33,7 @@ const Card: React.FC<Card> = ({ props }) => {
   };
 
   return (
-    <div className="flex flex-col  bg-style-1 min-h-96 py-12 items-center gap-3 rounded-md border-[0.5px] border-white border-opacity-5 hover:border-orange-500 transition-all duration-150">
+    <div className="flex flex-col  bg-style-2 min-h-[420px] py-12 items-center gap-3 rounded-md border-[0.5px] border-orange-500 border-opacity-30 hover:border-orange-500 transition-all duration-150 ease-in">
       <div className="size-32 rounded-full overflow-hidden">
         {userName && !imgError ? (
           <img
@@ -52,7 +52,7 @@ const Card: React.FC<Card> = ({ props }) => {
       </h2>
       <span className="text-orange-400 text-sm">@{userName}</span>
       <p className="mb-5 text-md capitalize px-6">{bio}</p>
-      {skillsCmp}
+      {skills.length > 0 && skillsCmp}
     </div>
   );
 };

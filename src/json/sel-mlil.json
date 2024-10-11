@@ -3,6 +3,7 @@
     "firstName": "Saad",
     "lastName": "El Mlili",
     "userName": "MliliGenes",
-    "bio": "I Code!"
+    "bio": "I Code!",
+    "skills": ["React", "Express", "Svelt", "Tailwind"]
   }
 ]

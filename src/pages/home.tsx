@@ -9,14 +9,14 @@ export default function Home() {
         className="flex flex-col min-h-[660px] justify-center"
         style="bg-style-1"
       >
-        <h1 className="font-sora text-7xl mb-8">
+        <h1 className="font-sora text-5xl md:text-7xl mb-8">
           Join Our Elite Team of Contributors.
         </h1>
         <div className="mb-8 text-lg">
           <p>At 1337, we're not just coding – we're crafting the future.</p>
           <p>Be part of a team that's redefining what's possible in tech.</p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4 text-center">
           <a
             href=""
             className="py-2 px-4 rounded text-md bg-orange-600 text-white"

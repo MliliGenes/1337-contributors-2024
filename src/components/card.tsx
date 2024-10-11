@@ -9,14 +9,6 @@ const Card: React.FC<Card> = ({ props }) => {
   const { firstName, lastName, userName, bio, skills = [] } = props;
 
   const pfp = `https://github.com/${userName}.png`;
-  const avatar = (
-    <div className="w-full h-full bg-gradient-to-r from-orange-400 to-orange-600 flex justify-center items-center text-5xl">
-      <span>
-        {firstName[0]}
-        {lastName[0]}
-      </span>
-    </div>
-  );
 
   const skillsCmp = (
     <div className="flex flex-wrap gap-2 px-12 justify-center">
@@ -34,7 +26,7 @@ const Card: React.FC<Card> = ({ props }) => {
 
   return (
     <div className="flex flex-col  bg-style-2 min-h-[420px] py-12 items-center gap-3 rounded-md border-[0.5px] border-orange-500 border-opacity-30 hover:border-orange-500 transition-all duration-150 ease-in">
-      <div className="size-32 rounded-full overflow-hidden">
+      <div className="size-32 rounded-full overflow-hidden bg-gradient-to-r from-orange-400 to-orange-600 flex justify-center items-center text-5xl outline outline-2 outline-orange-400 outline-offset-2">
         {userName && !imgError ? (
           <img
             src={pfp}
@@ -43,7 +35,10 @@ const Card: React.FC<Card> = ({ props }) => {
             className="w-full h-full object-cover"
           />
         ) : (
-          avatar
+          <span>
+            {firstName[0]}
+            {lastName[0]}
+          </span>
         )}
       </div>
       <h2 className="text-4xl font-sora">

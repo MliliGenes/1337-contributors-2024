@@ -13,7 +13,7 @@ const ScreenLayout: React.FC<ScreenLayoutProps> = ({
 }) => {
   return (
     <section className={style}>
-      <div className={"max-w-screen-lg mx-auto px-20 " + className}>
+      <div className={"max-w-screen-xl mx-auto px-12 lg:px-20 " + className}>
         {children}
       </div>
     </section>

@@ -4,7 +4,7 @@ export default function Team() {
   return (
     <>
       <ScreenLayout>
-        {/* <h2>Meet Our Talented Contributors</h2> */}
+        <h2></h2>
       </ScreenLayout>
     </>
   );

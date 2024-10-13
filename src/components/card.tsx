@@ -41,7 +41,7 @@ const Card: React.FC<Card> = ({ props }) => {
           </span>
         )}
       </div>
-      <h2 className="text-4xl font-sora">
+      <h2 className="text-2xl lg:text-4xl font-sora">
         <span className="text-orange-500">{firstName}</span>{" "}
         <span>{lastName}</span>
       </h2>

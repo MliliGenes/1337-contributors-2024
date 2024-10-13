@@ -7,7 +7,7 @@ interface Contributors {
 
 const Gird: React.FC<Contributors> = ({ contributors }) => {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid lg:grid-cols-3 gap-4">
       {contributors.map((c) => (
         <Card props={c} />
       ))}

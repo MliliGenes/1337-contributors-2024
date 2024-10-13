@@ -8,7 +8,7 @@ export default function Home() {
         className="flex flex-col min-h-[660px] justify-center"
         style="bg-style-1"
       >
-        <h1 className="font-sora text-5xl md:text-7xl mb-8">
+        <h1 className="font-sora text-4xl md:text-7xl mb-8">
           Join Our Elite Team of Contributors.
         </h1>
         <div className="mb-8 text-md md:text-lg">

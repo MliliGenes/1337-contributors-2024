@@ -10,7 +10,7 @@ export default function Links() {
     <div>
       <div className="flex items-center justify-center">
         <a
-          href=""
+          href="https://github.com/MliliGenes/1337-contributors-2024"
           className="hover:bg-white hover:bg-opacity-10 hover:text-orange-500 size-8 flex justify-center items-center rounded-md transition-all duration-150 ease-in"
         >
           <FontAwesomeIcon icon={faGithub} />

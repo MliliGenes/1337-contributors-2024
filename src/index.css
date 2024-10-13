@@ -97,8 +97,9 @@
 .bg-style-2 {
   background-image: linear-gradient(
       0deg,
-      rgb(0, 0, 0) 0% 5%,
-      transparent 60% 100%
+      rgb(0, 0, 0) 0% 10%,
+      rgba(234, 90, 12, 0.08),
+      rgba(234, 90, 12, 0.15)
     ),
     repeating-linear-gradient(
       0deg,
@@ -113,6 +114,5 @@
       rgba(225, 225, 225, 0.12) 0.25px,
       transparent 1px,
       transparent 30px
-    ),
-    linear-gradient(0deg, rgba(234, 90, 12, 0.08), rgba(234, 90, 12, 0.15));
+    );
 }

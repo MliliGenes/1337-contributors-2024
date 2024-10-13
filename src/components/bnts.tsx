@@ -5,7 +5,7 @@ export default function Bnts() {
   return (
     <div className="flex flex-col md:flex-row gap-4 text-center">
       <a
-        href=""
+        href="https://github.com/MliliGenes/1337-contributors-2024"
         className="py-2 px-4 rounded text-md bg-orange-600 text-white hover:underline"
       >
         <FontAwesomeIcon icon={faGithub} />
